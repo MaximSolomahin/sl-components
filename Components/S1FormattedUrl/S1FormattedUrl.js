@@ -21,11 +21,11 @@ export class S1FormattedUrl extends LitElement {
     }
 
     get formattedUrl() {
-        return html`<a href="#" @click="${this._openModalWithInformation}">${this.label}</a>`
+        return html`<a href="#" @click="${this._followLink}">${this.label}</a>`
     }
 
-    _openModalWithInformation() {
-        this.dispatchEvent(new CustomEvent('showmodal', {
+    _followLink() {
+        this.dispatchEvent(new CustomEvent('followlink', {
             detail: {
                 id: this.id
             }
