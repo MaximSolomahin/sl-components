@@ -5,8 +5,6 @@ export class S1FormattedUrl extends LitElement {
         id: {type: String},
         tableName: {type: String, attribute: 'table-name'},
         label: {type: String},
-        target: {type: String},
-        withModal: {type: String, attribute: 'with-modal', converter: (value) => value === 'true'},
     };
 
     static styles = css`
