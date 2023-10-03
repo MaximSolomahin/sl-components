@@ -18,7 +18,8 @@ export class SlApp extends LitElement {
     }
 
     render() {
-        return html`<s1-formatted-date variant="d.m.Y H:i:s" date="2021-03-09 08:11:55"></s1-formatted-date> 
+        return html`
+            <s1-formatted-date variant="d.m.Y H:i:s" date="2021-03-09 08:11:55"></s1-formatted-date> 
             <s1-formatted-number value="0.55559" fraction-digits="2" format="percent"></s1-formatted-number>
             <s1-formatted-url id="123" table-name="user" label="Петя Головин"  with-modal="false"></s1-formatted-url>
         `;

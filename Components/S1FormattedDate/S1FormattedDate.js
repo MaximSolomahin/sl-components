@@ -73,7 +73,7 @@ export class S1FormattedDate extends LitElement {
     }
 
     render() {
-        return html`<p>${this.formattedDate}</p> `;
+        return html`<span>${this.formattedDate}</span> `;
     }
 }
 

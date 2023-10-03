@@ -44,9 +44,9 @@ export class S1FormattedNumber extends LitElement {
 
     render() {
         if (this.format === PERCENT) {
-            return html`<slot>${this.percent}</slot>`;
+            return html`<span>${this.percent}</span>`;
         }
-        return html`<slot>${this.formattedNumber}</slot>`;
+        return html`<span>${this.formattedNumber}</span>`;
     }
 }
 
